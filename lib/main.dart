@@ -48,115 +48,117 @@ class ScheduleScreen extends StatelessWidget {
   // Datos de prueba para las clases
   final List<ClassInfo> classes = [
     // Lunes
-    ClassInfo(
-      day: 1,
-      startHour: 8,
-      duration: 2,
-      title: "Admin de Redes",
-      color: Colors.blue.shade900,
-      teacher: "Juan Pérez",
-      group: "IS-8A",
-      classroom: "Lab. Redes",
-    ),
 
-    // Martes
-    ClassInfo(
-      day: 2,
-      startHour: 12,
-      duration: 2,
-      title: "Taller de investigación",
-      color: Colors.blue.shade400,
-      teacher: "María García",
-      group: "IS-8A",
-      classroom: "Salón 201",
-    ),
-    ClassInfo(
-      day: 2,
-      startHour: 14,
-      duration: 3,
-      title: "Programación móvil",
-      color: Colors.blue.shade800,
-      teacher: "Carlos Rodríguez",
-      group: "IS-8A",
-      classroom: "Lab. Cómputo",
-    ),
+  // ADMIN DE REDES
+  ClassInfo(
+    day: 1, // Lunes
+    startHour: 8,
+    duration: 2,
+    title: "Admin de Redes",
+    color: Colors.blue.shade900,
+    teacher: "José Antonio Espinosa AT",
+    group: "8SA",
+    classroom: "H2",
+  ),
+  ClassInfo(
+    day: 5, // Viernes
+    startHour: 7,
+    duration: 2,
+    title: "Admin de Redes",
+    color: Colors.blue.shade900,
+    teacher: "José Antonio Espinosa AT",
+    group: "8SA",
+    classroom: "H12",
+  ),
 
-    // Miércoles
-    ClassInfo(
-      day: 3,
-      startHour: 9,
-      duration: 2,
-      title: "Backend",
-      color: Colors.blue.shade700,
-      teacher: "Ana Martínez",
-      group: "IS-8A",
-      classroom: "Lab. Cómputo",
-    ),
-    ClassInfo(
-      day: 3,
-      startHour: 13,
-      duration: 3,
-      title: "Gestión SW",
-      color: Colors.blue.shade800,
-      teacher: "Luis Hernández",
-      group: "IS-8A",
-      classroom: "Salón 303",
-    ),
+  // TALLER DE INVESTIGACIÓN
+  ClassInfo(
+    day: 2, // Martes
+    startHour: 12,
+    duration: 2,
+    title: "Taller de Inv. I",
+    color: Colors.blue.shade400,
+    teacher: "Pedro Alfonso Guadalupe",
+    group: "8SA",
+    classroom: "H6",
+  ),
+  ClassInfo(
+    day: 4, // Jueves
+    startHour: 12,
+    duration: 2,
+    title: "Taller de Inv. I",
+    color: Colors.blue.shade400,
+    teacher: "Pedro Alfonso Guadalupe",
+    group: "8SA",
+    classroom: "H6",
+  ),
 
-    // Jueves
-    ClassInfo(
-      day: 4,
-      startHour: 12,
-      duration: 2,
-      title: "Taller de investigación",
-      color: Colors.blue.shade400,
-      teacher: "María García",
-      group: "IS-8A",
-      classroom: "Salón 201",
-    ),
-    ClassInfo(
-      day: 4,
-      startHour: 14,
-      duration: 2,
-      title: "Programación móvil",
-      color: Colors.blue.shade800,
-      teacher: "Carlos Rodríguez",
-      group: "IS-8A",
-      classroom: "Lab. Cómputo",
-    ),
+  // BACKEND
+  ClassInfo(
+    day: 3, // Miércoles
+    startHour: 9,
+    duration: 2,
+    title: "Des Back-End",
+    color: Colors.blue.shade700,
+    teacher: "Rodrigo Fidel Gaxiola So",
+    group: "8SC",
+    classroom: "H8",
+  ),
+  ClassInfo(
+    day: 5, // Viernes
+    startHour: 10,
+    duration: 3,
+    title: "Des Back-End",
+    color: Colors.blue.shade700,
+    teacher: "Rodrigo Fidel Gaxiola So",
+    group: "8SC",
+    classroom: "H10",
+  ),
 
-    // Viernes
-    ClassInfo(
-      day: 5,
-      startHour: 7,
-      duration: 2,
-      title: "Admin de Redes",
-      color: Colors.blue.shade900,
-      teacher: "Juan Pérez",
-      group: "IS-8A",
-      classroom: "Lab. Redes",
-    ),
-    ClassInfo(
-      day: 5,
-      startHour: 10,
-      duration: 3,
-      title: "Backend",
-      color: Colors.blue.shade700,
-      teacher: "Ana Martínez",
-      group: "IS-8A",
-      classroom: "Lab. Cómputo",
-    ),
-    ClassInfo(
-      day: 5,
-      startHour: 13,
-      duration: 2,
-      title: "Gestión SW",
-      color: Colors.blue.shade800,
-      teacher: "Luis Hernández",
-      group: "IS-8A",
-      classroom: "Salón 303",
-    ),
-  ];
+  // PROGRAMACIÓN MÓVIL
+  ClassInfo(
+    day: 2, // Martes
+    startHour: 14,
+    duration: 3,
+    title: "Prog. Aplic. Mov.",
+    color: Colors.blue.shade800,
+    teacher: "Sara Nelly Moreno Cime",
+    group: "8SC",
+    classroom: "H2",
+  ),
+  ClassInfo(
+    day: 4, // Jueves
+    startHour: 14,
+    duration: 2,
+    title: "Prog. Aplic. Mov.",
+    color: Colors.blue.shade800,
+    teacher: "Sara Nelly Moreno Cime",
+    group: "8SC",
+    classroom: "H8",
+  ),
+
+  // GESTIÓN ÁGIL
+  ClassInfo(
+    day: 3, // Miércoles
+    startHour: 13,
+    duration: 3,
+    title: "Gest. Ágil Proy. Sofw.",
+    color: Colors.blue.shade800,
+    teacher: "Mario Renán Moreno Sabid",
+    group: "8SC",
+    classroom: "H11",
+  ),
+  ClassInfo(
+    day: 5, // Viernes
+    startHour: 13,
+    duration: 2,
+    title: "Gest. Ágil Proy. Sofw.",
+    color: Colors.blue.shade800,
+    teacher: "Mario Renán Moreno Sabid",
+    group: "8SC",
+    classroom: "H11",
+  ),
+];
 
   @override
   Widget build(BuildContext context) {
